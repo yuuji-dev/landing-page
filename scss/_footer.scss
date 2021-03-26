@@ -1,0 +1,125 @@
+.footer {
+  background-color: $VeryLightGray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 102.5rem;
+  font-size: 1.4rem;
+  background-image: url(../images/bg-pattern-footer-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media only screen and (min-width: 600px) {
+    height: 55rem;
+  }
+  hr {
+    visibility: hidden;
+  }
+  @media only screen and (min-width: 1000px) {
+    hr {
+      visibility: visible;
+      width: 80%;
+      height: 0.1rem;
+      margin-top: 3rem;
+      color: $DarkGrayishViolet;
+    }
+    justify-content: flex-start;
+    height: 37.5rem;
+    background-position: left;
+    background-size: contain;
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
+  }
+
+  &-header {
+    margin-top: 8.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media only screen and (min-width: 600px) {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 40%;
+    }
+
+    @media only screen and (min-width: 1000px) {
+      flex-direction: row;
+      justify-content: space-between;
+
+      width: 100%;
+      padding: 0 15.6rem;
+    }
+
+    &-social {
+      width: 14.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      @media screen and(max-width:999px) {
+        *{
+          padding: 1rem;
+        }
+      }
+      img:hover{
+        
+        
+        transition: all 200ms ease-in-out;
+    }
+    }
+  }
+
+  &-nav {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    @media only screen and (min-width: 600px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    @media only screen and (min-width: 1000px) {
+      width: 100%;
+      padding: 0 15.6rem;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-comp {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "karla" sans-serif;
+      a:hover{
+        text-decoration: underline;
+        transition: all 200ms ease-in-out;
+    }
+      li {
+        margin: 0.5rem 0;
+        color: $DarkViolet;
+      }
+
+      font-family: "karla", sans-serif;
+      font-weight: 700;
+
+      h4 {
+        margin: 3.4rem 0;
+        color: $DarkGrayishViolet;
+      }
+
+      a {
+        color: $DarkViolet;
+      }
+      
+      @media only screen and (min-width: 1000px) {
+        text-align: left;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+}

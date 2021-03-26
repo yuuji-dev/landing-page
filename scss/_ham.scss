@@ -1,0 +1,44 @@
+.open {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 7.5rem;
+  bottom: 0;
+  height: 59rem;
+  background-color: $VeryDarkViolet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 29.8rem;
+  background-image: url(../images/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+
+  #view-plans {
+    border: 1px solid white;
+    padding: 1.8rem 9.8rem;
+  }
+  a {
+    font-family: "Karla";
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    padding: 2rem;
+  }
+  @media only screen and (min-width: 1000px) {
+    display: none;
+  }
+}
+.header-ham {
+  @media only screen and (max-width: 999px) {
+    display: block;
+  }
+  @media only screen and (min-width: 1000px) {
+    display: none;
+  }
+}

@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2rem;
+
+  width: 100%;
+  z-index: 22;
+  background: white;
+  position: relative;
+
+  &-nav {
+    li {
+      list-style: none;
+      
+    }
+
+    @media only screen and (max-width: 999px) {
+      display: none;
+    }
+
+    @media only screen and (min-width: 1000px) {
+      padding: 2rem 15.8rem;
+      display: flex;
+      li:not(:last-child) {
+        margin-right: 1.6rem;
+        a:hover{
+            color: $VeryDarkViolet;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+        }
+      }
+      #view-plans {
+        padding: 1rem 2.6rem;
+        border: 2px solid black;
+        color: $VeryDarkViolet;
+        &:hover{
+            background-color: $VeryDarkViolet;
+            color: white;
+            transition: all 200ms ease-in-out;
+            cursor: pointer;
+        }
+      }
+      a {
+        color: $DarkGrayishViolet;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-family: "karla";
+      }
+    }
+  }
+
+  &-ham {
+    display: block;
+  }
+}

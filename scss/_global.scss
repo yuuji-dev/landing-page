@@ -1,0 +1,59 @@
+$DarkViolet: hsl(256, 26%, 20%);
+$GrayishBlue: hsl(216, 30%, 68%);
+
+$VeryDarkViolet: hsl(270, 9%, 17%);
+$DarkGrayishViolet: hsl(273, 4%, 51%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+//
+
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  max-width: 144rem;
+  position: relative;
+
+  h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 4.6rem;
+  }
+
+  h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 2.8rem;
+    color: $VeryDarkViolet;
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-family: "Karla", serif;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+    
+  }
+
+  @media only screen and (min-width: 1000px) {
+    h1 {
+      font-size: 6.8rem;
+    }
+  }
+
+  hr {
+    opacity: 0.8;
+  }
+}
