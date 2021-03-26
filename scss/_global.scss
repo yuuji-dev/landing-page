@@ -21,8 +21,12 @@ $VeryLightGray: hsl(0, 0%, 98%);
 }
 
 body {
-  max-width: 144rem;
-  position: relative;
+  width: 100%;
+  main{
+    max-width: 144rem;
+    position: relative;
+    margin: 0 auto;
+  }
 
   h1 {
     font-family: "DM Serif Display", serif;

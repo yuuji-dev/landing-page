@@ -13,8 +13,13 @@
 }
 
 body {
+  width: 100%;
+}
+
+body main {
   max-width: 144rem;
   position: relative;
+  margin: 0 auto;
 }
 
 body h1 {
@@ -59,7 +64,7 @@ body hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2.2rem;
+  padding: 2rem 15.8rem;
   width: 100%;
   z-index: 22;
   background: white;
@@ -78,7 +83,6 @@ body hr {
 
 @media only screen and (min-width: 1000px) {
   .header-nav {
-    padding: 2rem 15.8rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
