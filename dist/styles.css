@@ -660,7 +660,7 @@ body hr {
   right: 0;
   top: 7.5rem;
   bottom: 0;
-  height: 59rem;
+  height: 100vh;
   background-color: #2b272f;
   display: flex;
   -webkit-box-orient: vertical;
@@ -693,6 +693,11 @@ body hr {
   font-weight: 700;
   color: white;
   padding: 2rem;
+}
+
+.open a::hover {
+  cursor: pointer;
+  opacity: 0.92;
 }
 
 @media only screen and (min-width: 1000px) {
