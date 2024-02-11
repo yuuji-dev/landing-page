@@ -70,6 +70,12 @@ body hr {
   background: white;
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .header{
+    padding: 0 5vw;
+    heigth: 10vh;
+  }
+}
 
 .header-nav li {
   list-style: none;
