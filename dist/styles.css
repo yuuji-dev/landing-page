@@ -73,7 +73,7 @@ body hr {
 @media only screen and (max-width: 768px) {
   .header{
     padding: 0 5vw;
-    heigth: 10vh;
+    heigth: 8vh;
   }
 }
 
@@ -658,7 +658,7 @@ body hr {
   position: absolute;
   left: 0;
   right: 0;
-  top: 7.5rem;
+  top: 8vh;
   bottom: 0;
   height: 100vh;
   background-color: #2b272f;
@@ -695,7 +695,7 @@ body hr {
   padding: 2rem;
 }
 
-.open a::hover {
+.open a:hover {
   cursor: pointer;
   opacity: 0.92;
 }
